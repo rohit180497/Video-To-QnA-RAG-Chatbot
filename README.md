@@ -38,8 +38,7 @@ I used pre-trained BERT models to process video transcriptions and answer the bi
 - Uses BERT for tokenization and embedding.
 - Computes cosine similarity to generate yes/no predictions for each question.
 
-**High Level Architecture**
-![**High Level Architecture**]()
+![**High Level Architecture**](architecture/Video_to_Speech_Application.drawio.png)
 
 
 2. **RAG Approach**
@@ -48,6 +47,9 @@ This approach incorporates Retrieval Augmented Generation (RAG) by:
 - Transcribing video content and storing text vectors using FAISS for efficient semantic search.
 - Using vector-based similarity searches to answer binary questions based on video descriptions.
 - Adding a caching mechanism to improve response times for repeated queries.
+
+![**High Level Architecture**](architecture/RAG_Application_drawio.png)
+
 
 ## Results
 

@@ -38,6 +38,10 @@ I used pre-trained BERT models to process video transcriptions and answer the bi
 - Uses BERT for tokenization and embedding.
 - Computes cosine similarity to generate yes/no predictions for each question.
 
+**High Level Architecture**
+![**High Level Architecture**]()
+
+
 2. **RAG Approach**
 This approach incorporates Retrieval Augmented Generation (RAG) by:
 
@@ -72,3 +76,42 @@ This approach incorporates Retrieval Augmented Generation (RAG) by:
 - MoviePy: For video-to-audio extraction.
 - Streamlit: For the web-based user interface.
 - Transformers Library: For model implementation.
+
+## How to Run
+
+1. Clone the repository: 
+
+```bash
+git clone https://github.com/rohit180497/Video-To-QnA-RAG-Chatbot.git
+cd Video-To-QnA-RAG-Chatbot
+```
+
+2. Install the dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Run the Streamlit web app:
+
+```bash
+streamlit run app.py
+```
+
+4. Upload a video or input text to query and retrieve answers to the binary questions.
+
+## Future Work
+
+- Improve performance on subjective questions such as sensory stimulation and visually pleasing.
+- Optimize the retrieval mechanism in RAG for better semantic search.
+- Experiment with additional models and techniques for handling multi-modal data (e.g., video and text combined).
+
+## Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests to improve the project.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+
